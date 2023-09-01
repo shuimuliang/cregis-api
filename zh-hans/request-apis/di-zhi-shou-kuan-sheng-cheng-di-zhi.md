@@ -1,22 +1,10 @@
 # 地址收款 > 生成地址
 
-## 接入 API
+### 接入 API
 
 POST /api/v1/address/create
 
-> Body 请求参数
-
-```json
-{
-  "pid": 1382528827416576,
-  "callback_url": "http://xxxx.com/deposit/callback",
-  "chain_id": "60",
-  "alias": "cc",
-  "nonce": "ubqso3",
-  "timestamp": 1687850657960,
-  "sign": "f5be13fdd8c6f63951ca4427359457cb"
-}
-```
+### 请求
 
 #### 请求参数
 
@@ -30,7 +18,37 @@ POST /api/v1/address/create
 | timestamp     | integer(int64) | true | 时间戳     |
 | sign          | string         | true | 签名      |
 
-> 返回示例
+###### 请求示例
+
+```json
+{
+  "pid": 1382528827416576,
+  "callback_url": "http://xxxx.com/deposit/callback",
+  "chain_id": "60",
+  "alias": "cc",
+  "nonce": "ubqso3",
+  "timestamp": 1687850657960,
+  "sign": "f5be13fdd8c6f63951ca4427359457cb"
+}
+```
+
+### 返回
+
+#### 返回结果
+
+| 名称   | 类型     | 说明     |
+| ---- | ------ | ------ |
+| code | string | 返回码    |
+| msg  | string | 返回信息   |
+| data | object | 返回数据对象 |
+
+#### 返回数据`data`对象
+
+| 名称      | 类型     | 说明 |
+| ------- | ------ | -- |
+| address | string | 地址 |
+
+###### 返回示例
 
 ```json
 {
@@ -42,16 +60,3 @@ POST /api/v1/address/create
 }
 ```
 
-#### 返回结果
-
-| 名称   | 类型     | 说明     |
-| ---- | ------ | ------ |
-| code | string | 返回码    |
-| msg  | string | 返回信息   |
-| data | object | 返回数据对象 |
-
-#### 返回数据对象
-
-| 名称      | 类型     | 说明 |
-| ------- | ------ | -- |
-| address | string | 地址 |

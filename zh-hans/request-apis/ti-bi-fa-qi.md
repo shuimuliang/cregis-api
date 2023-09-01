@@ -1,25 +1,10 @@
 # 提币 > 发起
 
-## 接入 API
+### 接入 API
 
 POST /api/v1/payout
 
-> Body 请求参数
-
-```json
-{
-  "pid": 1382528827416576,
-  "currency": "195@195",
-  "address": "TXsmKpEuW7qWnXzJLGP9eDLvWPR2GRn1FS",
-  "amount": "1.1",
-  "remark": "payout",
-  "third_party_id": "c9231e604da54469a735af3f449c880f",
-  "callback_url": "http://xxx.com/payout/callback",
-  "nonce": "hwlkk6",
-  "timestamp": 1688004243314,
-  "sign": "d6eef2de79e39f434a38efb910213ba6"
-}
-```
+### 请求
 
 #### 请求参数
 
@@ -36,7 +21,40 @@ POST /api/v1/payout
 | timestamp        | integer(int64) | 是  | 时间戳     |
 | sign             | string         | 是  | 签名      |
 
-> 返回示例
+###### 请求示例
+
+```json
+{
+  "pid": 1382528827416576,
+  "currency": "195@195",
+  "address": "TXsmKpEuW7qWnXzJLGP9eDLvWPR2GRn1FS",
+  "amount": "1.1",
+  "remark": "payout",
+  "third_party_id": "c9231e604da54469a735af3f449c880f",
+  "callback_url": "http://xxx.com/payout/callback",
+  "nonce": "hwlkk6",
+  "timestamp": 1688004243314,
+  "sign": "d6eef2de79e39f434a38efb910213ba6"
+}
+```
+
+### 返回
+
+#### 返回结果
+
+| 名称   | 类型     | 说明     |
+| ---- | ------ | ------ |
+| code | string | 返回码    |
+| msg  | string | 返回信息   |
+| data | object | 返回数据对象 |
+
+#### 返回数据`data`对象
+
+| 名称  | 类型             | 说明    |
+| --- | -------------- | ----- |
+| cid | integer(int64) | 系统流水号 |
+
+###### 返回示例
 
 ```json
 {
@@ -47,17 +65,3 @@ POST /api/v1/payout
   }
 }
 ```
-
-#### 返回结果
-
-| 名称   | 类型     | 说明     |
-| ---- | ------ | ------ |
-| code | string | 返回码    |
-| msg  | string | 返回信息   |
-| data | object | 返回数据对象 |
-
-#### 返回数据对象
-
-| 名称  | 类型             | 说明    |
-| --- | -------------- | ----- |
-| cid | integer(int64) | 系统流水号 |

@@ -1,20 +1,10 @@
 # 订单收款 > 查询
 
-## 接入 API
+### 接入 API
 
 POST /api/v1/deposit/query
 
-> Body 请求参数
-
-```json
-{
-  "pid": 1382528827416576,
-  "cid": 1382625403125760,
-  "nonce": "pfvt1t",
-  "timestamp": 1687851045181,
-  "sign": "93aad14ccb8109cfafd68f024fe7248a"
-}
-```
+### 请求
 
 #### 请求参数
 
@@ -26,7 +16,57 @@ POST /api/v1/deposit/query
 | timestamp | integer(int64) | 是  | 时间戳     |
 | sign      | string         | 是  | 签名      |
 
-> 返回示例
+###### 请求示例
+
+```json
+{
+  "pid": 1382528827416576,
+  "cid": 1382625403125760,
+  "nonce": "pfvt1t",
+  "timestamp": 1687851045181,
+  "sign": "93aad14ccb8109cfafd68f024fe7248a"
+}
+```
+
+### 返回
+
+#### 返回结果
+
+| 名称   | 类型     | 说明     |
+| ---- | ------ | ------ |
+| code | string | 返回码    |
+| msg  | string | 返回信息   |
+| data | object | 返回数据对象 |
+
+#### 返回数据`data`对象
+
+| 名称               | 类型             | 说明      |
+| ---------------- | -------------- | ------- |
+| pid              | integer(int64) | 项目编号    |
+| address          | string         | 地址      |
+| chain\_id        | string         | 链编号     |
+| token\_id        | string         | 代币编号    |
+| currency         | string         | 币种标识    |
+| amount           | string         | 金额      |
+| real\_amount     | string         | 实际金额    |
+| status           | integer(int32) | 状态      |
+| third\_party\_id | string         | 调用方业务编号 |
+| txid             | string         | 交易hash  |
+| block\_height    | string         | 交易高度    |
+| block\_time      | integer(int64) | 交易时间戳   |
+
+**`status`枚举值**
+
+| 值 | 说明   |
+| - | ---- |
+| 0 | 待确认  |
+| 1 | 成功   |
+| 2 | 失败   |
+| 3 | 超时取消 |
+| 4 | 人工取消 |
+
+
+###### 返回示例
 
 ```json
 {
@@ -48,38 +88,3 @@ POST /api/v1/deposit/query
   }
 }
 ```
-
-#### 返回结果
-
-| 名称   | 类型     | 说明     |
-| ---- | ------ | ------ |
-| code | string | 返回码    |
-| msg  | string | 返回信息   |
-| data | object | 返回数据对象 |
-
-#### 返回数据对象
-
-| 名称               | 类型             | 说明      |
-| ---------------- | -------------- | ------- |
-| pid              | integer(int64) | 项目编号    |
-| address          | string         | 地址      |
-| chain\_id        | string         | 链编号     |
-| token\_id        | string         | 代币编号    |
-| currency         | string         | 币种标识    |
-| amount           | string         | 金额      |
-| real\_amount     | string         | 实际金额    |
-| status           | integer(int32) | 状态      |
-| third\_party\_id | string         | 调用方业务编号 |
-| txid             | string         | 交易hash  |
-| block\_height    | string         | 交易高度    |
-| block\_time      | integer(int64) | 交易时间戳   |
-
-**status枚举值**
-
-| 值 | 说明   |
-| - | ---- |
-| 0 | 待确认  |
-| 1 | 成功   |
-| 2 | 失败   |
-| 3 | 超时取消 |
-| 4 | 人工取消 |

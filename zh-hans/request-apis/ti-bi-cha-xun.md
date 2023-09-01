@@ -1,20 +1,10 @@
 # 提币 > 查询
 
-## 接入 API
+### 接入 API
 
 POST /api/v1/payout/query
 
-> Body 请求参数
-
-```json
-{
-  "pid": 1382528827416576,
-  "cid": 1382626461605888,
-  "nonce": "sw7kv5",
-  "timestamp": 1687853722065,
-  "sign": "af825ddb839e6796d62977caf18d3394"
-}
-```
+### 请求
 
 #### 请求参数
 
@@ -26,7 +16,48 @@ POST /api/v1/payout/query
 | timestamp | integer(int64) | true | 时间戳     |
 | sign      | string         | true | 签名      |
 
-> 返回示例
+
+###### 请求示例
+
+```json
+{
+  "pid": 1382528827416576,
+  "cid": 1382626461605888,
+  "nonce": "sw7kv5",
+  "timestamp": 1687853722065,
+  "sign": "af825ddb839e6796d62977caf18d3394"
+}
+```
+
+### 返回
+
+#### 返回数据
+
+| 名称   | 类型     | 说明     |
+| ---- | ------ | ------ |
+| code | string | 返回码    |
+| msg  | string | 返回信息   |
+| data | object | 返回数据对象 |
+
+#### 返回数据`data`对象
+
+| 名称               | 类型             | 说明      |
+| ---------------- | -------------- | ------- |
+| pid              | integer(int64) | 项目编号    |
+| chain\_id        | string         | 链编号     |
+| token\_id        | string         | 代币编号    |
+| currency         | string         | 币种标识    |
+| address          | string         | 地址      |
+| amount           | string         | 金额      |
+| status           | integer(int32) | 状态      |
+| third\_party\_id | string         | 调用方业务编号 |
+| remark           | string         | 备注      |
+| txid             | string         | 交易hash  |
+| block\_height    | string         | 区块高度    |
+| block\_time      | integer(int64) | 区块时间    |
+
+
+###### 返回示例
 
 ```json
 {
@@ -48,28 +79,3 @@ POST /api/v1/payout/query
   }
 }
 ```
-
-#### 返回数据
-
-| 名称   | 类型     | 说明     |
-| ---- | ------ | ------ |
-| code | string | 返回码    |
-| msg  | string | 返回信息   |
-| data | object | 返回数据对象 |
-
-**返回数据对象**
-
-| 名称               | 类型             | 说明      |
-| ---------------- | -------------- | ------- |
-| pid              | integer(int64) | 项目编号    |
-| chain\_id        | string         | 链编号     |
-| token\_id        | string         | 代币编号    |
-| currency         | string         | 币种标识    |
-| address          | string         | 地址      |
-| amount           | string         | 金额      |
-| status           | integer(int32) | 状态      |
-| third\_party\_id | string         | 调用方业务编号 |
-| remark           | string         | 备注      |
-| txid             | string         | 交易hash  |
-| block\_height    | string         | 区块高度    |
-| block\_time      | integer(int64) | 区块时间    |
