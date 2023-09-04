@@ -1,7 +1,29 @@
-# API Key获取
+# Table of contents
 
-在所有的API请求，都需要API Key进行验签以保证数据和请求来源的正确性
+### GETTING STARTED
 
-对于回调请求，强烈要求对接方同样进行验签以保证数据安全性。
+* [API Key获取](<README (1).md>)
+* [请求说明](getting-started/qing-qiu-shuo-ming.md)
+* [响应说明](getting-started/xiang-ying-shuo-ming.md)
+* [签名规则](getting-started/qian-ming-gui-ze.md)
+* [返回码](getting-started/fan-hui-ma.md)
+* [币种码](getting-started/bi-zhong-ma.md)
+* [SDK支持](getting-started/sdk-zhi-chi.md)
 
-API和回调请求中所需的Endpoint（网关服务器）、pid（项目编号）、API Key等，[点击查看获取方法](https://docs.cregis.com/7tAbr779/product/wikidetail?articleId=cd4Ix6ce75\&usageCategoryId=476\&usageGroupId=-1)。
+### REQUEST APIS
+
+* [提币 > 发起](request-apis/ti-bi-fa-qi.md)
+* [提币 > 查询](request-apis/ti-bi-cha-xun.md)
+* [订单收款 > 发起](request-apis/ding-dan-shou-kuan-fa-qi.md)
+* [订单收款 > 查询](request-apis/ding-dan-shou-kuan-cha-xun.md)
+* [订单收款 > 取消](request-apis/ding-dan-shou-kuan-qu-xiao.md)
+* [地址收款 > 生成地址](request-apis/di-zhi-shou-kuan-sheng-cheng-di-zhi.md)
+* [校验 > 地址是否存在](request-apis/xiao-yan-di-zhi-shi-fou-cun-zai.md)
+* [校验 > 地址合法性](request-apis/xiao-yan-di-zhi-he-fa-xing.md)
+* [币种 > 查询](request-apis/bi-zhong-cha-xun.md)
+
+### CALLBACK
+
+* [回调 > 订单收款](callback/hui-tiao-ding-dan-shou-kuan.md)
+* [回调 > 提币](callback/hui-tiao-ti-bi.md)
+* [回调 > 地址充值](callback/hui-tiao-di-zhi-chong-zhi.md)

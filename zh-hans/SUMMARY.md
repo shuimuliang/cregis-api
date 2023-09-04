@@ -1,8 +1,10 @@
 # Table of contents
 
+* [Table of contents](README.md)
+
 ## GETTING STARTED
 
-* [API Key获取](README.md)
+* [API Key获取](<README (1).md>)
 * [请求说明](getting-started/qing-qiu-shuo-ming.md)
 * [响应说明](getting-started/xiang-ying-shuo-ming.md)
 * [签名规则](getting-started/qian-ming-gui-ze.md)
