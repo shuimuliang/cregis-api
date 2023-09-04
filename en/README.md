@@ -24,6 +24,6 @@
 
 ### CALLBACK
 
-* [Callback > Collection](callback/collection.md)
-* [Callback > Withdrawal](callback/withdrawal.md)
-* [Callback > Deposit](callback/deposit.md)
+* [Callback > Address Deposit](callback/address-deposit.md)
+* [Callback > Order Deposit](callback/order-deposit.md)
+* [Callback > Payout](callback/payout.md)
