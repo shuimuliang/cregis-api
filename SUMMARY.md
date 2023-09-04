@@ -32,7 +32,7 @@
     * [Verification > Address Legality](en/request-apis/validation-address-legality.md)
     * [Withdrawal > Initiate](en/request-apis/withdrawal-initiate.md)
     * [Withdrawal > Query](en/request-apis/withdrawal-query.md)
-* [API Key获取](zh-hans/README.md)
+* [Cregis API 中文文档](zh-hans/README.md)
   * [Table of contents](zh-hans/SUMMARY.md)
   * [callback](zh-hans/callback/README.md)
     * [回调 > 地址充值](zh-hans/callback/hui-tiao-di-zhi-chong-zhi.md)
