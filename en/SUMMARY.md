@@ -1,8 +1,10 @@
-# Table of Contents
+# Table of contents
+
+* [Table of Contents](README.md)
 
 ## GETTING STARTED
 
-* [Obtaining the API Key](README.md)
+* [Obtaining the API Key](<README (1).md>)
 * [Request](getting-started/request.md)
 * [Response](getting-started/response.md)
 * [Signature](getting-started/signature.md)

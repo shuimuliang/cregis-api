@@ -1,9 +1,29 @@
-# Cregis API Documentation
+# Table of Contents
 
-## Obtaining the API Key
+### GETTING STARTED
 
-For all API requests, an API Key is required for verification to ensure the accuracy of the data and the source of the request. 
+* [Obtaining the API Key](<README (1).md>)
+* [Request](getting-started/request.md)
+* [Response](getting-started/response.md)
+* [Signature](getting-started/signature.md)
+* [Return Codes](getting-started/return-codes.md)
+* [Currency Identifiers](getting-started/currency-identifiers.md)
+* [SDK](getting-started/sdk.md)
 
-For callback requests, it is strongly recommended that the integrating party also perform verification to ensure data security.
+### REQUEST APIS
 
-For the required Endpoint (gateway server), pid (project id), and API Key in both API and callback requests, [click here to view the retrieval method](https://docs.cregis.com/7tAbr779/product/wikidetail?articleId=cd4Ix6ce75\&usageCategoryId=476\&usageGroupId=-1).
+* [Withdrawal > Initiate](request-apis/withdrawal-initiate.md)
+* [Withdrawal > Query](request-apis/withdrawal-query.md)
+* [Collection > Initiate](request-apis/collection-initiate.md)
+* [Collection > Query](request-apis/collection-query.md)
+* [Collection > Cancel](request-apis/collection-cancel.md)
+* [Address > Address Generation](request-apis/address-generate.md)
+* [Validation > Address Existence](request-apis/validation-address-existence.md)
+* [Validation > Address Legality](request-apis/validation-address-legality.md)
+* [Currency > Query](request-apis/currency-query.md)
+
+### CALLBACK
+
+* [Callback > Collection](callback/collection.md)
+* [Callback > Withdrawal](callback/withdrawal.md)
+* [Callback > Deposit](callback/deposit.md)
