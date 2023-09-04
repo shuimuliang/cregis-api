@@ -12,11 +12,11 @@
 
 ### REQUEST APIS
 
-* [Withdrawal > Initiate](request-apis/withdrawal-initiate.md)
-* [Withdrawal > Query](request-apis/withdrawal-query.md)
-* [Collection > Initiate](request-apis/collection-initiate.md)
-* [Collection > Query](request-apis/collection-query.md)
-* [Collection > Cancel](request-apis/collection-cancel.md)
+* [Payout > Create](request-apis/payout-create.md)
+* [Payout > Query](request-apis/payout-query.md)
+* [Order Deposit > Create](request-apis/order-deposit-create.md)
+* [Order Deposit > Query](request-apis/order-deposit-query.md)
+* [Order Deposit > Cancel](request-apis/order-deposit-cancel.md)
 * [Address > Address Generation](request-apis/address-generate.md)
 * [Validation > Address Existence](request-apis/validation-address-existence.md)
 * [Validation > Address Legality](request-apis/validation-address-legality.md)
