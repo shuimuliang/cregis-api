@@ -2,7 +2,7 @@
 
 ### GETTING STARTED
 
-* [Obtaining the API Key](<README (1).md>)
+* [Obtaining the API Key](getting-started/obtaining-the-api-key.md)
 * [Request](getting-started/request.md)
 * [Response](getting-started/response.md)
 * [Signature](getting-started/signature.md)
