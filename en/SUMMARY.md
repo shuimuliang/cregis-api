@@ -20,6 +20,6 @@
   * [Validation > Address Legality](request-apis/validation-address-legality.md)
   * [Currency > Query](request-apis/currency-query.md)
 * [callback](callback/README.md)
-  * [Callback > Address Deposit](callback/address-deposit.md)
   * [Callback > Order Deposit](callback/order-deposit.md)
   * [Callback > Payout](callback/payout.md)
+  * [Callback > Address Deposit](callback/address-deposit.md)
