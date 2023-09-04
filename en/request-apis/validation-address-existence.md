@@ -4,7 +4,7 @@
 
 POST /api/v1/address/inner
 
-Check if the address belongs to the corresponding project. After initiating the order, you can validate the returned address information to prevent the address from being tampered with.
+Check if the address belongs to the corresponding project. After create the order/address deposit, you can validate the returned address information to prevent the address from being tampered with.
 
 ### Request
 

@@ -1,23 +1,26 @@
 # Request Guidelines
 
-<mark style="color:orange;">The project interface currently only supports the </mark><mark style="color:orange;">`http`</mark> <mark style="color:orange;">`POST`</mark> <mark style="color:orange;"></mark><mark style="color:orange;">method and the specified</mark> <mark style="color:orange;">`Content-Type`</mark><mark style="color:orange;"> is:</mark> <mark style="color:orange;"></mark><mark style="color:orange;">`application/json`</mark><mark style="color:orange;">.</mark><mark style="color:orange;"> **Please pay special attention**</mark><mark style="color:orange;">, that all request parameters are passed through the `json`</mark><mark style="color:orange;"> format, any other methods of passing parameters will be invalid.</mark>
+The `cregis` API only supports the `POST` method over `http`. Ensure that the `Content-Type` is set to `application/json`. **Please pay special attention** that all request parameters are accepted in `JSON` format. Any other methods for passing parameters will be invalid.
 
 ## Parameters
 
-For the project interface, the parameters are divided into two parts: system parameters and business parameters.
+API request parameters are categorized into two parts: 
+- **System Parameters**: Parameters that are necessary for every API call.
+- **Specific Parameters**: Parameters specific to individual API calls or endpoints.
+
 
 
 ### System Parameters
 
 | Parameter        | Type     | Description                                                        | Example                              | Required |
 | --------- | ------ | --------------------------------------------------------- | -------------------------------- | ---- |
-| timestamp | long   | Current request timestamp in milliseconds                                              | 1687846491667                    | 是    |
-| nonce     | string | A 6-character random string                                                  | 24abxo                           | 是    |
-| sign      | string | The digital signature of the request to prevent illegal tampering. Refer to the [Signature Rules](signature-rules.md) section for the signing rules. | eb881023045a167d3e4a7378bc212f53 | 是    |
+| timestamp | long   | Current request timestamp in milliseconds                                              | 1687846491667                    | yes    |
+| nonce     | string | A 6-character random string                                                  | 24abxo                           | yes    |
+| sign      | string | The digital signature of the request to prevent illegal tampering. Refer to the [Signature](signature.md) section for the signing rules. | eb881023045a167d3e4a7378bc212f53 | yes    |
 
-### Business Parameters
+### Functional Parameters
 
-Apart from the three parameters above, other parameters are business parameters. Below is a request example.
+Apart from the three parameters above, other parameters are Functional Parameters. Below is a request example.
 
 ## Request Example
 

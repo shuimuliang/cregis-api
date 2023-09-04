@@ -20,7 +20,7 @@ _Lexicographical Definition: In English dictionaries, words are arranged in orde
 f502a9ac9ca54327986f29c03b271491
 ```
 
-The **request parameters excluding sign** are:
+The **request parameters excluding the 'sign' field** are:
 
 
 ```json
@@ -37,25 +37,25 @@ The **request parameters excluding sign** are:
 }
 ```
 
-**step 2**（非空`keyvalue`按字典序排序）得到的字符串为：
+**step 2**  Sort and combine the `non-empty` key-value pairs in dictionary order:
 
 ```
 addressTXsmKpEuW7qWnXzJLGP9eDLvWPR2GRn1FSamount1.1callback_urlhttp://192.168.2.29:9099/callbackcurrency195@195noncemb8udupid1382528827416576remarkpayoutthird_party_id19faf9d3c8f34caf926f332f3021e887timestamp1688003966801
 ```
 
-**step 3**（拼接项目`key`）的到字符串为：
+**step 3**  Concatenate the `API key` to the string from the previous step:
 
 ```
 f502a9ac9ca54327986f29c03b271491addressTXsmKpEuW7qWnXzJLGP9eDLvWPR2GRn1FSamount1.1callback_urlhttp://192.168.2.29:9099/callbackcurrency195@195noncemb8udupid1382528827416576remarkpayoutthird_party_id19faf9d3c8f34caf926f332f3021e887timestamp1688003966801
 ```
 
-**step 4**（取`md5`）得到的 sign 为：
+**step 4**  Calculate the MD5 hash of the resulting string. The computed 'sign' value is:
 
 ```
 c9bae061ae3f5f8d3bfde817f6966c36
 ```
 
-**final step**（增加了`sign`）:
+**final step** Add the computed 'sign' value to the original request parameters:
 
 ```json
 {

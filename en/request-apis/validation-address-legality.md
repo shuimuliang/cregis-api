@@ -4,7 +4,7 @@
 
 POST /api/v1/address/legal
 
-Verify the legality of the address format. It can be verified before initiating a withdrawal to ensure the receiving address is valid before executing the withdrawal operation.
+Verify the legality of the address format. It can be verified before create a `payout` request to ensure the receiving address is valid.
 
 ### Request
 
@@ -46,7 +46,7 @@ Verify the legality of the address format. It can be verified before initiating 
 
 | Name   | Type    | Description                       |
 | ------ | ------- | --------------------------------- |
-| result | boolean | true: Valid address, false: Invalid address |
+| result | boolean | true: Valid address<br>false: Invalid address |
 
 
 ###### Response Example

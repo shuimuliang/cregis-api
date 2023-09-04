@@ -46,7 +46,7 @@ POST /api/v1/address/inner
 
 | 名称     | 类型      | 说明                                       |
 | ------ | ------- | ---------------------------------------- |
-| result | boolean | <p>true：地址是项目内地址<br>false：地址不是项目内部地址</p> |
+| result | boolean | true：地址是项目内地址<br>false：地址不是项目内部地址 |
 
 
 ###### 返回示例
