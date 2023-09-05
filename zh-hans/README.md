@@ -1,6 +1,6 @@
 # 目录
 
-### GETTING STARTED
+### 开始使用 
 
 * [API Key获取](getting-started/api-huo-qu.md)
 * [请求说明](getting-started/qing-qiu-shuo-ming.md)
@@ -10,7 +10,7 @@
 * [币种码](getting-started/bi-zhong-ma.md)
 * [SDK支持](getting-started/sdk-zhi-chi.md)
 
-### REQUEST APIS
+### 用于发送请求的API
 
 * [提币 > 发起](request-apis/ti-bi-fa-qi.md)
 * [提币 > 查询](request-apis/ti-bi-cha-xun.md)
@@ -22,7 +22,7 @@
 * [校验 > 地址合法性](request-apis/xiao-yan-di-zhi-he-fa-xing.md)
 * [币种 > 查询](request-apis/bi-zhong-cha-xun.md)
 
-### CALLBACK
+### 回调通知
 
 * [回调 > 订单收款](callback/hui-tiao-ding-dan-shou-kuan.md)
 * [回调 > 提币](callback/hui-tiao-ti-bi.md)
