@@ -4,7 +4,7 @@ The `cregis` API provides developer `SDK` for mainstream languages. Please follo
 
 ## Java
 
-[Java SDK](https://github.com/0xcregis/java-sdk)
+[Java SDK](https://github.com/0xcregis/cregis-java-sdk)
 
 ## Go
 

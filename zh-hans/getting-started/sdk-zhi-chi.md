@@ -4,7 +4,7 @@
 
 ## Java
 
-[https://github.com/0xcregis/java-sdk](https://github.com/0xcregis/java-sdk)
+[https://github.com/0xcregis/cregis-java-sdk](https://github.com/0xcregis/cregis-java-sdk)
 
 ## Go
 
