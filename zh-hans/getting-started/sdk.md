@@ -8,8 +8,8 @@
 
 ## Go
 
-[https://github.com/0xcregis/go-sdk](https://github.com/0xcregis/go-sdk)
+[https://github.com/0xcregis/cregis-go-sdk](https://github.com/0xcregis/cregis-go-sdk)
 
 ## Php
 
-[https://github.com/0xcregis/php-sdk](https://github.com/0xcregis/php-sdk)
+[https://github.com/0xcregis/cregis-sdk-php](https://github.com/0xcregis/cregis-sdk-php)
