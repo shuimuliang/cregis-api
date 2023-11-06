@@ -8,7 +8,7 @@
 * [签名规则](getting-started/qian-ming-gui-ze.md)
 * [返回码](getting-started/fan-hui-ma.md)
 * [币种码](getting-started/bi-zhong-ma.md)
-* [SDK支持](getting-started/sdk-zhi-chi.md)
+* [SDK支持](getting-started/sdk.md)
 
 ### 用于发送请求的API
 
