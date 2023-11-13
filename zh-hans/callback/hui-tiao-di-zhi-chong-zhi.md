@@ -25,6 +25,7 @@ HTTP POST
 | 名称            | 类型             | 说明      |
 | ------------- | -------------- | ------- |
 | pid           | integer(int64) | 项目编号    |
+| cid           | integer(int64) | 系统流水号    |
 | chain\_id     | string         | 链编号     |
 | token\_id     | string         | 代币编号    |
 | currency      | string         | 币种标识    |
@@ -44,6 +45,7 @@ HTTP POST
 ```json
 {
     "pid": 1382528827416576,
+    "cid": 1391751691788288,
     "chain_id":"195",
     "token_id":"195",
     "currency": "TRX",

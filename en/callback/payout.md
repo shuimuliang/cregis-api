@@ -30,6 +30,7 @@ HTTP POST
 | Name             | Type            | Description       |
 | ---------------- | --------------- | ----------------- |
 | pid              | integer(int64)  | Project ID        |
+| cid              | integer(int64)  | Cregis ID        |
 | chain_id         | string          | Chain ID          |
 | token_id         | string          | Token ID          |
 | currency         | string          | Currency Identifier |
@@ -50,6 +51,7 @@ HTTP POST
 ```json
 {
   "pid": 1382528827416576,
+  "cid": 1391751691788288,
   "address": "TXsmKpEuW7qWnXzJLGP9eDLvWPR2GRn1FS",
   "chain_id": "195",
   "token_id": "195",
