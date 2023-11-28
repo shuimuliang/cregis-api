@@ -14,7 +14,7 @@ POST /api/v1/payout
 | currency         | string         | 是  | 币种标识    |
 | address          | string         | 是  | 地址      |
 | amount           | string         | 是  | 金额      |
-| callback\_url    | string         | 是  | 回调地址,该提币信息被处理时会向对应的callback_url发起回调通知,回调详情请参考[回调 > 提币](../callback/hui-tiao-ti-bi.md)部分。    |
+| callback\_url    | string         | 是  | 回调地址,该提币信息被处理时会向对应的callback_url发起回调通知,回调详情请参考[回调 > 提币](../callback/hui-tiao-ti-bi.md "mention")部分。    |
 | third\_party\_id | string         | 是  | 调用方业务编号 |
 | remark           | string         | 是  | 备注      |
 | nonce            | string         | 是  | 6位随机字符串 |
