@@ -13,7 +13,7 @@ The callback comes in two scenarios, which are determined by the `status` in the
 | 1      | Successful deposit   |
 | 2      | Failed deposit       |
 
-If you need to re-push, you can log into the `cregis` client, select the corresponding project in the menu, and re-push it from the callback record.
+After initiating the callback, when the returned content is `success`, the callback is successful. Otherwise, the callback fails. If the callback fails, you can push it again, you can log into the `cregis` client, select the corresponding project in the menu, and re-push it from the callback record.
 
 > Note: Different types of callbacks will have different content. It is strongly recommended to use different APIs for different types of callbacks to ensure clear and specific business logic.
 

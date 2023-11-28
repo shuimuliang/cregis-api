@@ -13,7 +13,7 @@ POST /api/v1/address/create
 | pid           | integer(int64) | true | 项目编号    |
 | chain\_id     | string         | true | 链id     |
 | alias         | string         | false | 地址显示名称  |
-| callback\_url | string         | true | 回调地址    |
+| callback\_url | string         | true | 回调地址,该地址接收资金时会向对应的callback_url发起交易回调通知,回调详情请参考【回调 > 地址充值】(callback/hui-tiao-di-zhi-chong-zhi.md)部分。    |
 | nonce         | string         | true | 6位随机字符串 |
 | timestamp     | integer(int64) | true | 时间戳     |
 | sign          | string         | true | 签名      |

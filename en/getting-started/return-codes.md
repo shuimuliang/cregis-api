@@ -10,6 +10,7 @@
 
 | Code | **Description**             |
 | ---------- | --------------------------------- |
+| Axxxx      | Param error   |
 | E0001      | IP not added to whitelist   |
 | E0002      | Remarks must be a combination of up to 20 characters |
 | E0003      | Project does not exist or has an abnormal status |
