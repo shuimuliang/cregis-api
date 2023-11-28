@@ -14,7 +14,7 @@ POST /api/v1/payout
 | currency       | string         | Yes      | Currency Identifier|
 | address        | string         | Yes      | Address            |
 | amount         | string         | Yes      | Amount             |
-| callback_url   | string         | Yes      | Callback URL, If funds are successfully received, refer to [Callback > Payout](callback/payout.md) section for callback details.     |
+| callback_url   | string         | Yes      | Callback URL, If funds are successfully received, refer to [Callback > Payout](../callback/payout.md "mention") section for callback details.     |
 | third_party_id | string         | Yes      | Caller Customized ID |
 | remark         | string         | Yes      | Remark             |
 | nonce          | string         | Yes      | 6-digit random string  |
